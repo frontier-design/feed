@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="og:title" content="%VITE_SITE_TITLE%">
+  <link rel="icon" href="./src/assets/frontier_brat.jpg" />
+  <title>%VITE_SITE_TITLE%</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const t = import.meta?.env?.VITE_SITE_TITLE || 'Entity Feed';
+      document.title = t;
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
