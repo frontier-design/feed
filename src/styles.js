@@ -1,13 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
-import PPWriterWoff2 from "./assets/fonts/PPWriter-RegularText.woff2";
-
 export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'PP Writer';
-    src: local('PP Writer'),
-         url(${PPWriterWoff2}) format('woff2');
+    src:
+      url('/fonts/PPWriter-RegularText.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
